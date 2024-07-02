@@ -6,11 +6,13 @@ import { sample_foods } from 'src/data';
   providedIn: 'root'
 })
 export class FoodService {
-
   constructor() { }
-  getAll():Food[]{
+  getAll(): Food[] {
     return sample_foods
   }
-
+  getAllFoodsBySearchTerm(searchTerm: string): Food[] {
+    return this.getAll().filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }
+
+}
 

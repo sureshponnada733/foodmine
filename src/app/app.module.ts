@@ -6,15 +6,21 @@ import { AppComponent } from './app.component';
 import { HearderComponent } from './components/partials/hearder/hearder.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { RatingModule } from 'ng-starrating';
+import { SearchComponent } from './components/partials/search/search.component';
+import { NotfoundComponent } from './components/pages/notfound/notfound.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HearderComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     RatingModule
   ],
