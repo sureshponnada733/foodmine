@@ -1,0 +1,13 @@
+<div *ngIf="tags">
+    <a
+      *ngFor="let tag of tags"
+      routerLinkActive=""
+      ngClass="{{isActiveRoute?'myactive':''}}"
+      routerLink="/tag/{{ tag.name }}"
+    >
+      {{ tag.name }}({{ tag.count }})
+    </a>
+  </div>
+  
+
+

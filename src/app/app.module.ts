@@ -9,6 +9,8 @@ import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './components/partials/search/search.component';
 import { NotfoundComponent } from './components/pages/notfound/notfound.component';
 import { FormsModule } from '@angular/forms';
+import { FoodPageComponent } from './components/pages/food-page/food-page.component';
+import { TagsComponent } from './components/partials/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
     HearderComponent,
     HomeComponent,
     SearchComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    FoodPageComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
